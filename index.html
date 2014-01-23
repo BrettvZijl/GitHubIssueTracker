@@ -17,9 +17,19 @@
 				<th>Assigned To</th>
 				<th>Comments</th>
 				<th>Status</th>
-				
 			</tr>
 		</table>
+		<form id="sort">
+			Sort By: <select id="sortVal">
+						<option value="num">GH Number</option>
+						<option value="prior">Priority</option>
+					</select>
+					<select id="sortOrd">
+						<option value="asc">Ascending</option>
+						<option value="desc">Descending</option>
+					</select>
+			<input type="button" value="Sort" id="sortBtn" onclick="Sortvals()">
+		</form>
 	</body>
 	
 	<script type="text/javascript" src="getIssues.js"></script>
